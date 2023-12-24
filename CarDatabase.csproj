@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E5779EF-C34E-4D50-A7B4-E8E733D42DDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>Sourii%27s Car Database</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>A:\Final Project\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4018FCA992B6C741A0931CB6B501A434171F2086</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CarDatabase_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarUserControl.Designer.cs">
+      <DependentUpon>CarUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCarUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCarUserControl1.Designer.cs">
+      <DependentUpon>CCarUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerUserControl.Designer.cs">
+      <DependentUpon>CustomerUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeQAUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeQAUserControl.Designer.cs">
+      <DependentUpon>EmployeeQAUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModUserControlcust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModUserControlcust.Designer.cs">
+      <DependentUpon>ModUserControlcust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickAccessUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickAccessUserControl.Designer.cs">
+      <DependentUpon>QuickAccessUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RentUserControl1.Designer.cs">
+      <DependentUpon>RentUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetailUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RetailUserControl.Designer.cs">
+      <DependentUpon>RetailUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTOCUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RTOCUserControl.Designer.cs">
+      <DependentUpon>RTOCUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTOUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RTOUserControl.Designer.cs">
+      <DependentUpon>RTOUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceUserControl.Designer.cs">
+      <DependentUpon>ServiceUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarUserControl.resx">
+      <DependentUpon>CarUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCarUserControl1.resx">
+      <DependentUpon>CCarUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerUserControl.resx">
+      <DependentUpon>CustomerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeQAUserControl.resx">
+      <DependentUpon>EmployeeQAUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModUserControlcust.resx">
+      <DependentUpon>ModUserControlcust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuickAccessUserControl.resx">
+      <DependentUpon>QuickAccessUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentUserControl1.resx">
+      <DependentUpon>RentUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetailUserControl.resx">
+      <DependentUpon>RetailUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTOCUserControl.resx">
+      <DependentUpon>RTOCUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTOUserControl.resx">
+      <DependentUpon>RTOUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceUserControl.resx">
+      <DependentUpon>ServiceUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CarDatabase_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\CarDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\CarDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CarDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\download.jfif" />
+    <None Include="Resources\car-service2.jpeg" />
+    <None Include="Resources\res.jpg" />
+    <None Include="Resources\Dbms2.jpeg" />
+    <None Include="Resources\slide.png" />
+    <None Include="Resources\modi.png" />
+    <None Include="Resources\digital-assurance-for-retail-1.jpg" />
+    <None Include="Resources\rto-1635833121.jpg" />
+    <None Include="Resources\service.jpg" />
+    <None Include="Resources\lower-rent.jpg" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\car-logo-clip-art-4.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\LogOut.jpg" />
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
